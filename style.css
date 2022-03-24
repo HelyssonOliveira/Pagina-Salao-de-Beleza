@@ -220,23 +220,13 @@ footer{
     
     /* logo */
     .logo{
-        float: none;
-        width: 40px;
-        margin: auto;
-        display: block;
-        margin-bottom: 10px;
+        width: 0px;
     }
     
     /* nav */
+    
     nav{
-        max-width: 500px;
-        right: 20px;
-        top: 50%;
-        transform: translate(0%, -50%);
-        text-align: center;
-    }
-    nav{
-        position: static;
+        position: sticky;
         max-width: 700px;
         top: 0%;
         right: 0px;
@@ -244,8 +234,14 @@ footer{
         text-align: center;
     }
     .link_menu{
-        margin-bottom: 2%;
+        float: none;
+    }    
+}
+
+@media screen and (max-width: 350px) {
+    .link_menu, .li_menu{
         float: none;
         display: block;
+        margin: auto;
     }    
 }
